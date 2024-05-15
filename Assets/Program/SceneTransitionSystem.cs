@@ -17,6 +17,10 @@ public class SceneTransitionSystem : MonoBehaviour
     {
         SceneManager.LoadScene("Stage" + stageNumber);
     }
+    public void SceneRetry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     public void GameEnd()
     {
 #if UNITY_EDITOR

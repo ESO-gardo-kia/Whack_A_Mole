@@ -29,15 +29,15 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Text limitTimeText;
     [SerializeField]
-    private Text EndGameText;
-    [SerializeField]
     private Text scoreText;
+    [SerializeField]
+    private GameObject EndGamePanel;
 
     void Start()
     {
         isGameOver = false;
         countLimitTime = limitTime;
-        EndGameText.enabled = false;
+        EndGamePanel.SetActive(false);
 
         Transform parentTransform = transform.Find("EnemyRespawnPointList");
         popPointCount = parentTransform.transform.childCount;
@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
             if (countLimitTime <= 0)
             {
                 countLimitTime = 0;
-                EndGameText.enabled = true;
+                EndGamePanel.SetActive(true);
                 isGameOver = true;
             }
             else countLimitTime -= Time.deltaTime;

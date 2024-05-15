@@ -187,18 +187,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &299862834 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5256087120004895988, guid: 1aa4845aed7fb544b81c6e4ae098e006,
-    type: 3}
-  m_PrefabInstance: {fileID: 3975372059970552156}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &311989705 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1745155862505430436, guid: 1aa4845aed7fb544b81c6e4ae098e006,
@@ -726,19 +714,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 975640969472301399}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3296802206230835054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6581544819849385806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9452bb5e45865f458b6a03146411a67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 8034620197406656324}
 --- !u!1 &3470494527971468004
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,6 +956,51 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5256087120004895988, guid: 1aa4845aed7fb544b81c6e4ae098e006,
+        type: 3}
+      propertyPath: m_Text
+      value: GAMEOVER
+      objectReference: {fileID: 0}
+    - target: {fileID: 5256087120004895988, guid: 1aa4845aed7fb544b81c6e4ae098e006,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 5256087120004895988, guid: 1aa4845aed7fb544b81c6e4ae098e006,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 5256087120004895988, guid: 1aa4845aed7fb544b81c6e4ae098e006,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5706250913017804295, guid: 1aa4845aed7fb544b81c6e4ae098e006,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5706250913017804295, guid: 1aa4845aed7fb544b81c6e4ae098e006,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5706250913017804295, guid: 1aa4845aed7fb544b81c6e4ae098e006,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868499892390619806, guid: 1aa4845aed7fb544b81c6e4ae098e006,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -250
+      objectReference: {fileID: 0}
+    - target: {fileID: 8104182243259038111, guid: 1aa4845aed7fb544b81c6e4ae098e006,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1357,7 +1377,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1311470749279734185}
   - component: {fileID: 8034620197406656324}
-  - component: {fileID: 3296802206230835054}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1595,12 +1614,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyObject: {fileID: 4850427891861842671, guid: f8823ec4740c4e740bc745bf66436466,
     type: 3}
+  enemyPopPointList: []
+  popPossibleNumber: 
   concurrentPopNumber: 2
   popInterval: 1
   limitTime: 30
   limitTimeText: {fileID: 311989705}
   scoreText: {fileID: 1107667489}
-  EndGameText: {fileID: 299862834}
+  EndGamePanel: {fileID: 0}
 --- !u!4 &8043072654781934472
 Transform:
   m_ObjectHideFlags: 0
